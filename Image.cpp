@@ -327,6 +327,7 @@ Image &Image::ConvlineTrace() {
     memcpy(this->data, GT.data, this->size);
     return *this;
 }
+
 Image &Image::Convblur(char convolve) {
     double kernel[256];
     for (uint16_t i=0; i<256; i++) kernel[i] = 1.0f/256;
